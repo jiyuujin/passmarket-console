@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "markuplint:recommended"
+  ],
+  "parser": {
+    ".vue$": "@markuplint/vue-parser"
+  },
+  "specs": {
+    ".vue$": "@markuplint/vue-spec"
+  },
+  "rules": {
+    "invalid-attr": {
+      "options": {
+        "attrs": {
+          "colspan": {
+            "allowed": true,
+            "type": "Number"
+          },
+          "placeholder": {
+            "allowed": true,
+            "type": "String"
+          },
+          "required": {
+            "allowed": true,
+            "type": "Boolean"
+          },
+          "rowspan": {
+            "allowed": true,
+            "type": "Number"
+          }
+        }
+      }
+    }
+  },
+  "excludeFiles": [
+    "app/components/DragDropArea.vue",
+    "app/components/timetable/TimetableViewMobile.vue"
+  ]
+}

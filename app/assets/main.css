@@ -1,0 +1,44 @@
+/* global */
+
+@import './fonts.css';
+
+:root {
+  --header-height: 70px;
+  --sp-header-height: 90px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+[id] {
+  scroll-margin-top: var(--header-height);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'din-2014', 'Yu Gothic Medium', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic',
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: var(--sp-header-height);
+  }
+
+  [id] {
+    scroll-margin-top: var(--sp-header-height);
+  }
+}
